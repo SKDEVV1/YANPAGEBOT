@@ -4,6 +4,7 @@ const parser = require("body-parser");
 const express = require("express");
 const path = require("path");
 const app = express();
+const fetch = require('node-fetch');
 
 app.use(parser.json());
 app.use(express.static("website"));
